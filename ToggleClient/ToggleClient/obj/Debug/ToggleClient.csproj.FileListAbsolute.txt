@@ -1,0 +1,9 @@
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\obj\Debug\ToggleClient.AboutBox.resources
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\obj\Debug\ToggleClient.Properties.Resources.resources
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\obj\Debug\ToggleClient.csproj.GenerateResource.Cache
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\bin\Debug\ToggleClient.exe.config
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\bin\Debug\ToggleClient.exe
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\bin\Debug\ToggleClient.pdb
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\obj\Debug\ToggleClient.exe
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\obj\Debug\ToggleClient.pdb
+C:\dev\Projects\GitHub\ToggleClient\ToggleClient\obj\Debug\ToggleClient.csprojResolveAssemblyReference.cache
