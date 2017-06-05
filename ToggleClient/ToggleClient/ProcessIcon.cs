@@ -50,9 +50,9 @@ namespace ToggleClient
         XmlDocument configFile;
         XmlNode node;
 
-        string server_name;
-                
-        int port = 2345;
+        string server_name;                
+        int server_port = 2345;
+
         bool connected = false;        
 
         /// <summary>
@@ -118,6 +118,8 @@ namespace ToggleClient
                 configFile.Load("config.xml");
                 node = configFile.DocumentElement.SelectSingleNode("/server/name");
                 server_name = node.InnerText;
+                node = configFile.DocumentElement.SelectSingleNode("/server/port");
+                server_port = Int32.Parse(node.InnerText);
             }
             catch (FileNotFoundException fnfe)
             {
@@ -137,7 +139,7 @@ namespace ToggleClient
             Socket sock = null;
             try
             {
-                sock = Sockets.CreateTCPSocket(server_name, port);
+                sock = Sockets.CreateTCPSocket(server_name, server_port);
                 client = new ClientInfo(sock, false); // Don't start receiving yet
                 client.OnReadBytes += new ConnectionReadBytes(UpdateStatus);
                 client.BeginReceive();

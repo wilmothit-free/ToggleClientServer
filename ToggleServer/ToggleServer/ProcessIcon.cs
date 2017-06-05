@@ -23,6 +23,7 @@
 */
 using System;
 using System.IO;
+using System.Xml;
 using System.Net;
 using System.Text;
 using System.Diagnostics;
@@ -46,7 +47,12 @@ namespace ToggleServer
         System.Timers.Timer updateClientsTimer;
         System.Timers.Timer countDownTimer;
         Server server;
-        string status = "true";        
+        string status = "true";
+
+        XmlDocument configFile;
+        XmlNode node;
+        int server_port = 7404;
+        int reset = 420000;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ProcessIcon"/> class.
@@ -55,6 +61,34 @@ namespace ToggleServer
         {
             // Instantiate the NotifyIcon object.
             ni = new NotifyIcon();
+
+            try
+            {
+                configFile = new XmlDocument();
+                configFile.Load("config.xml");
+                node = configFile.DocumentElement.SelectSingleNode("/server/port");
+                server_port = Int32.Parse(node.InnerText);
+                node = configFile.DocumentElement.SelectSingleNode("/server/reset");
+                reset = Int32.Parse(node.InnerText);
+            }
+            catch (FileNotFoundException fnfe)
+            {
+                ni.Icon = Resources.DisconnectedSml;
+                ni.Text = "Cannot locate config.xml file. Using default values.";
+                Console.WriteLine("Error! Cannot find config file. Using default values.");                
+            }
+            catch (NullReferenceException nre)
+            {
+                ni.Icon = Resources.DisconnectedSml;
+                ni.Text = "Invalid config.xml file. Using default values.";
+                Console.WriteLine("Error! Invalid config.xml file. Using default values.");                
+            }
+            catch (XmlException xe)
+            {
+                ni.Icon = Resources.DisconnectedSml;
+                ni.Text = "Invalid config.xml file. Using default values.";
+                Console.WriteLine("Error! Invalid config.xml file. Using default values.");
+            }
         }
 
         /// <summary>
@@ -71,12 +105,15 @@ namespace ToggleServer
             // Attach a context menu.
             ni.ContextMenuStrip = new ContextMenus().Create();
 
+            //Start the server
             server = new Server(2345, new ClientEvent(ClientConnect));
 
+            //Start the timer that updates clients
             updateClientsTimer = new System.Timers.Timer(1000);
             updateClientsTimer.Elapsed += UpdateClients;
             updateClientsTimer.Start();
 
+            //Prepare the timer that resets after x minutes
             countDownTimer = new System.Timers.Timer(1000*60*7);
             countDownTimer.Elapsed += new ElapsedEventHandler(ChangeStatus);            
         }
@@ -100,6 +137,8 @@ namespace ToggleServer
             // Handle mouse button clicks.
             if (e.Button == MouseButtons.Left)
             {
+                //On the server we don't do anything yet when a user clicks it, but we could do something here.
+
                 // Start Windows Explorer.
                 //Process.Start("explorer", null);
                 //string text = "Toggle";

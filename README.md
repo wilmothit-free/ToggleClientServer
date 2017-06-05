@@ -6,11 +6,11 @@ Thanks!
 TitaniumCoder477
 
 Latest server download:
-- https://github.com/TitaniumCoder477/ToggleClientServer/tree/master/ToggleServer/ToggleServer/bin/Debug/ToggleServer.exe
+- https://github.com/TitaniumCoder477/ToggleClientServer/tree/master/ToggleServer/ToggleServer/bin/Build/ToggleServer.exe
 
 Latest client download:
-- https://github.com/TitaniumCoder477/ToggleClientServer/tree/master/ToggleClient/ToggleClient/bin/Debug/ToggleClient.exe
-- https://github.com/TitaniumCoder477/ToggleClientServer/tree/master/ToggleClient/ToggleClient/bin/Debug/config.xml
+- https://github.com/TitaniumCoder477/ToggleClientServer/tree/master/ToggleClient/ToggleClient/bin/Build/ToggleClient.exe
+- https://github.com/TitaniumCoder477/ToggleClientServer/tree/master/ToggleClient/ToggleClient/bin/Build/config.xml
 
 Setup:
 - Run the server app on a desktop/server

@@ -7,3 +7,12 @@ C:\dev\Projects\GitHub\ToggleServer\ToggleServer\bin\Debug\ToggleServer.pdb
 C:\dev\Projects\GitHub\ToggleServer\ToggleServer\obj\Debug\ToggleServer.exe
 C:\dev\Projects\GitHub\ToggleServer\ToggleServer\obj\Debug\ToggleServer.pdb
 C:\dev\Projects\GitHub\ToggleServer\ToggleServer\obj\Debug\ToggleServer.csprojResolveAssemblyReference.cache
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\bin\Debug\ToggleServer.exe.config
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\bin\Debug\ToggleServer.exe
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\bin\Debug\ToggleServer.pdb
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\obj\Debug\ToggleServer.csprojResolveAssemblyReference.cache
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\obj\Debug\ToggleServer.AboutBox.resources
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\obj\Debug\ToggleServer.Properties.Resources.resources
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\obj\Debug\ToggleServer.csproj.GenerateResource.Cache
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\obj\Debug\ToggleServer.exe
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleServer\ToggleServer\obj\Debug\ToggleServer.pdb

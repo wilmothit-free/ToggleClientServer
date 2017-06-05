@@ -1,0 +1,8 @@
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\bin\Release\ToggleClient.exe.config
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\bin\Release\ToggleClient.exe
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\bin\Release\ToggleClient.pdb
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.AboutBox.resources
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.Properties.Resources.resources
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.csproj.GenerateResource.Cache
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.exe
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.pdb
