@@ -1,5 +1,5 @@
 # toggleclientserver
-ToggleClientServer are two apps that provide a simple toggle switch. One server exists. Multiple clients monitor the server and can change the toggle status.
+ToggleClientServer is a pair of apps that provide a simple toggle switch. One server exists. Multiple clients monitor the server and can change the toggle status.
 
 Thanks!
 
